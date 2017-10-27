@@ -18,8 +18,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin/bin/usr/sbin/sbin:$PATH"
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-eval "$(rbenv init -)"
-
 # openconnect aliases
 alias ocon='sudo openconnect -u kmaia --authgroup=Technology -b --pid-file=/usr/local/var/run/openconnect.pid vpn.out.customink.com'
 alias ocoff='sudo kill -SIGINT $(cat /usr/local/var/run/openconnect.pid)'
