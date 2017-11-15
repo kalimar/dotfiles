@@ -7,6 +7,7 @@ brew 'zsh'
 brew 'heroku'
 brew 'ag'
 brew 'tig'
+brew 'mas'
 
 cask 'google-chrome'
 cask 'spotify'
