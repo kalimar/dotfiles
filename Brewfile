@@ -22,7 +22,6 @@ cask 'flux'
 cask 'slack'
 cask 'iterm2'
 cask 'visual-studio-code'
-cask 'cloudapp'
 
 mas 'Giphy', id: 668208984
 mas 'Captured', id: 414675451
