@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'homebrew/services'
 
 brew 'git'
 brew 'openssh'
@@ -8,6 +9,7 @@ brew 'heroku'
 brew 'ag'
 brew 'tig'
 brew 'mas'
+brew 'mysql' 
 
 cask '1password'
 cask 'dropbox'
