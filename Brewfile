@@ -28,3 +28,4 @@ cask 'visual-studio-code'
 mas 'Giphy', id: 668208984
 mas 'Captured', id: 414675451
 mas 'Moom', id: 419330170
+mas 'ColorSlurp', id: 1287239339
