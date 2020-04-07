@@ -5,6 +5,14 @@
 # auto_cd settings - Turn this on in zim
 # cdpath=(~ ~/workspace ~/foo)
 
+# fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# Change default zim location
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
+
 # Source zim
 if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
   source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
@@ -13,25 +21,14 @@ fi
 # Display CPU usage stats for commands taking more than 10 seconds
 export REPORTTIME=10
 
-# Set Editor for bundled gems
-export EDITOR="atom -nw"
-
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin/bin/usr/sbin/sbin:$PATH"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/dsa_id
 
-# openconnect aliases
-alias ocon='sudo openconnect -u kmaia --authgroup=Technology -b --pid-file=/usr/local/var/run/openconnect.pid vpn.out.customink.com'
-alias ocoff='sudo kill -SIGINT $(cat /usr/local/var/run/openconnect.pid)'
-alias ocheck='if [ -e /usr/local/var/run/openconnect.pid ]; then echo "vpn connected"; else echo "vpn disconnected";fi'
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-
-#
-# PATH
-#
-# Add atom to path
-export PATH="/usr/local/bin/atom:$PATH"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Add ~/bin
 export PATH="/Users/kmaia/bin:$PATH"
