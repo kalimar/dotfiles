@@ -22,7 +22,7 @@ https://github.com/Eriner/zim
 
 ## Setup iterm2
 https://github.com/powerline/fonts
-
+https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/AnonymousPro/complete
 http://iterm2colorschemes.com/
 
 ## Setup Node
