@@ -1,4 +1,4 @@
-tap 'homebrew/cask-cask'
+tap 'homebrew/cask'
 tap 'homebrew/services'
 
 brew 'git'
